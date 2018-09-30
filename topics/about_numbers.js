@@ -12,5 +12,5 @@ test("types", function() {
 test("NaN", function() {
     var resultOfFailedOperations = 7/'apple';
     equal(true, isNaN(resultOfFailedOperations), 'what will satisfy the equals assertion?');
-    equal(true, resultOfFailedOperations == NaN, 'is NaN == NaN?');
+    equal(false, resultOfFailedOperations == NaN, 'is NaN == NaN?');
 });
